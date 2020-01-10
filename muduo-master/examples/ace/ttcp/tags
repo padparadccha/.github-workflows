@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Context	ttcp.cc	/^  Context()$/;"	f	struct:Context
+Context	ttcp.cc	/^struct Context$/;"	s	file:
+NDEBUG	ttcp_blocking.cc	4;"	d	file:
+Options	common.h	/^  Options()$/;"	f	struct:Options
+Options	common.h	/^struct Options$/;"	s
+PayloadMessage	common.h	/^struct PayloadMessage$/;"	s
+SessionMessage	common.h	/^struct SessionMessage$/;"	s
+acceptOrDie	ttcp_blocking.cc	/^static int acceptOrDie(uint16_t port)$/;"	f	file:
+bytes	ttcp.cc	/^  int64_t bytes;$/;"	m	struct:Context	file:
+count	ttcp.cc	/^  int count;$/;"	m	struct:Context	file:
+data	common.h	/^  char data[0];$/;"	m	struct:PayloadMessage
+host	common.h	/^  std::string host;$/;"	m	struct:Options
+length	common.h	/^  int length;$/;"	m	struct:Options
+length	common.h	/^  int32_t length;$/;"	m	struct:PayloadMessage
+length	common.h	/^  int32_t length;$/;"	m	struct:SessionMessage
+main	main.cc	/^int main(int argc, char* argv[])$/;"	f
+nodelay	common.h	/^  bool transmit, receive, nodelay;$/;"	m	struct:Options
+number	common.h	/^  int number;$/;"	m	struct:Options
+number	common.h	/^  int32_t number;$/;"	m	struct:SessionMessage
+onConnection	ttcp.cc	/^void onConnection(const Options& opt, const TcpConnectionPtr& conn)$/;"	f	namespace:trans
+onConnection	ttcp.cc	/^void onConnection(const TcpConnectionPtr& conn)$/;"	f	namespace:receiving
+onMessage	ttcp.cc	/^void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp time)$/;"	f	namespace:receiving
+onMessage	ttcp.cc	/^void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp time)$/;"	f	namespace:trans
+output	ttcp.cc	/^  Buffer output;$/;"	m	struct:Context	file:
+parseCommandLine	common.cc	/^bool parseCommandLine(int argc, char* argv[], Options* opt)$/;"	f
+port	common.h	/^  uint16_t port;$/;"	m	struct:Options
+read_n	ttcp_blocking.cc	/^static int read_n(int sockfd, void* buf, int length)$/;"	f	file:
+receive	common.h	/^  bool transmit, receive, nodelay;$/;"	m	struct:Options
+receive	ttcp.cc	/^void receive(const Options& opt)$/;"	f
+receive	ttcp_blocking.cc	/^void receive(const Options& opt)$/;"	f
+receiving	ttcp.cc	/^namespace receiving$/;"	n	file:
+resolveOrDie	common.cc	/^struct sockaddr_in resolveOrDie(const char* host, uint16_t port)$/;"	f
+session	ttcp.cc	/^  SessionMessage session;$/;"	m	struct:Context	file:
+trans	ttcp.cc	/^namespace trans$/;"	n	file:
+transmit	common.h	/^  bool transmit, receive, nodelay;$/;"	m	struct:Options
+transmit	ttcp.cc	/^void transmit(const Options& opt)$/;"	f
+transmit	ttcp_blocking.cc	/^void transmit(const Options& opt)$/;"	f
+write_n	ttcp_blocking.cc	/^static int write_n(int sockfd, const void* buf, int length)$/;"	f	file:
